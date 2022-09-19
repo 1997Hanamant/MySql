@@ -35,6 +35,12 @@ select * from  xworkzodc.airport where id between 5 and 10;
 select * from  xworkzodc.airport where id between 10 and 12;
 select * from  xworkzodc.airport where id between 20 and 40;
 
+delete from xworkzodc.airport  where name='MumbaiAirport';
+delete from xworkzodc.airport  where name='ChennaiAirport';
+delete from xworkzodc.airport  where name='RajastanAirport';
+delete from xworkzodc.airport  where locations='Benaglur';
+delete from xworkzodc.airport where color='white';
+
 
 
 
