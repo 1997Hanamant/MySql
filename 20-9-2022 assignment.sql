@@ -62,3 +62,23 @@ Select  name from bank where name Like '%C%';
 Select  name from bank where name Like '%B%';
 Select  name from bank where name Like '&S%';
 
+select * from bank where location='Hubli' order by id ;
+
+Select distinct(manager) from bank;
+
+create table bank1 as select * from bank;
+select * from bank1;
+
+select Count(*) as noOfRows from bank;
+
+select Count(name) as noOfRows from bank;
+
+Select sum(name) from bank;
+
+select max(id) from bank;
+select min(id) from bank;
+
+Select avg(id) from bank;
+ 
+
+
