@@ -27,4 +27,4 @@ insert into cricketteam value(5,'WI','Nicolas Poorana',11,5,3);
 
 
 Select sum(noofplayers) from cricketteam group by noofplayers;
-select sum(noofPlayers) from cricketteam group by noofplayers having sum>3;
+select sum(noofPlayers) from cricketteam group by noofplayers having count(noofplayers)>50;

@@ -31,14 +31,41 @@ create table banks ( id int primary key,b_name varchar(20),b_location varchar(20
 
 create table college(c_id int,name varchar(20),b_id int, c_location varchar(20), foreign key(b_id) references banks(id));
 
-Insert InTO banks values(101,'sbi','btm');1
+Insert InTO banks values(101,'sbi','btm');
 Insert InTO banks values(102,'HDFC','Jayanagar');
 
 insert into college values(1,'sun','101','JPnagar');
-insert into college values(2,'vin','102','PPnagar');
+insert into college values(2,'vin','101','PPnagar');
 
 select * from banks;
 select * from college;
+delete from college where c_id=1;
+rollback;
+
+select sum(c_id) from college group by c_id;
+select sum(c_id) from college group by c_id having sum>3;
 
 
+create Table A(id int, name varchar(20),loaction varchar(20));
+create Table B(id int,name varchar(20),loaction varchar(20));
 
+Insert Into A Values(4,'Asdgjh','BTM1');
+Insert Into B Values(5,'Asdfkok',' BTM1');
+drop table A;
+drop table B;
+select * from A;
+select * from B;
+
+select A.id,B.id from A inner Join B on A.id=B.id;
+
+select A.id,A.name,B1.id,B.name from bank inner join B on A.id=B.id;
+
+select A.id,A.name,B.id,B.name from A right join B on A.id=B.id;
+
+select A.id,A.name,B.id,B.name from A left join B on A.id=B.id;
+
+select st.id,st.name,st2.id,st2.name,st3.region from states1 st inner join state2 st2 on st.id=st2.id 
+inner join state3 st3 on st2.id=st3.id;
+
+Select A.id,B.id from A full join B on A.id=B.id;
+select A.id,B.id from A full join B on A.id=B.id;
