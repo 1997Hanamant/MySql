@@ -33,4 +33,10 @@ inner join Tvs on bike.id=Tvs.id;
 select bike.name,Honda.name,Tvs.name from bike inner join Honda on bike.id=Honda.id
  inner join Tvs on Honda.id=Tvs.id;
 
+select name from Honda where id in (select id from bike where name='Hero Honda');
+update Tvs set name='Java Honada' where id in(select id from bike where name='Honda');
+delete  from Tvs where id in  (select id from bike where name='Honda');
 
+create view vw as select bike.price,bike.id,Honda.speed,Honda.name from bike,Honda;
+
+select * from vw;

@@ -69,3 +69,8 @@ inner join state3 st3 on st2.id=st3.id;
 
 Select A.id,B.id from A full join B on A.id=B.id;
 select A.id,B.id from A full join B on A.id=B.id;
+
+select name from A where id in(select id from B where name='Asdf');
+
+update bank set b_name='sbi' where c_id in(select id from college where name='vin');
+
