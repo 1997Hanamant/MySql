@@ -1,0 +1,139 @@
+16/09/2022
+Alter;
+1-add new coln to exsting table.
+2-change the coln datatype.
+3-Remove the coln from the exsting table.
+
+Syntax for adding new coln
+Alter table table_name add coln coln_name datatype;
+
+Syntax for Changing new coln datatype
+Alter table table_name modify coln_name new datatype;
+
+Syntax for dropping the coln from table
+Alter table table_name drop coln_name;
+
+Syntax for renaming the coln
+alter table table_name Rename coln old_coln_name to new_coln_name;
+
+Syntax for renaming the table_name
+Rename table table_name to new_table_name;
+
+19/09/2022
+DML(CRUD)-
+Insert, update,delete,selcet
+
+where-fliter the data based on condtions;
+
+
+SYnatx for update;
+Update table table_name set coln_name=value where condtion;
+
+SYnatx for delete;
+delete from table_name where condtion;
+
+
+AND and OR and In and Not IN opertaor
+In to avoid mutlipe or opertaor we use IN Opertor;
+
+
+Beteen -reache the data b/w the some range
+
+20/09/2022
+Character fuctions;
+contact,upper,lower,instr,substr,like
+contact-Select Concat(coln1,coln2) from table_name;
+
+upper-select upper(Coln name) from table_name;
+
+lower-select lower(Coln name) from table_name;
+
+Insrt(InString)-position of charcter from string.
+Select Instr(String word) as POS(Alias Name).
+
+Substr:
+Select Substr(String Startpostion ,noofCharac) As Str;
+
+Reverse:
+Select Reverse(coln name/attribute) from table_name
+
+Like:used for pattern Matching.
+ It will match any string of any length
+ 
+s% start with
+%s end with
+%s% start and end with.
+
+21/09/2022
+order by:sort the data either in asecding order or des;
+Select * from table_name order_by desc ascii(coln name).
+
+distinict-aviod the duplicates from column.
+
+
+duplicates table(create duplicates tables)
+create table table_name as selcet * from ; 
+
+Aggregate fuctions-used to perfrom fuctions on data.
+Count,sum,max,min,avg.
+Count-select count(*) as alias name from table.
+
+Sum 
+selcet sum(coln name ) from table_name;
+
+max.
+selcet max(coln name) from table_name
+
+min.
+selcet min(coln name) from table_name
+
+Avg
+
+Select Avg(Coln name ) from table_name
+
+
+28-09-2022
+
+Constraints
+not null
+unique
+check(privide min value to be provide)
+default
+primery key
+forigen key
+
+Group by -gruop similar value by single for aggrate functions
+having used to fliter Group By;
+rollback
+commit -permatarlty store in DB
+
+Select distinct from where group by having order by;(Sequnce)
+
+29/09/2022
+Joins
+inner joins:get the simlar values from both tales.
+
+Rigth join; select A.id,B.id from A right join B on A.id=B.id;(A Rigth B-Left)
+
+Auto-increment
+
+Full outer join:
+
+30/09/2022
+
+Subquery-query inside onther query .
+subquery conatin outer query an inner query.
+outer query is main query and inner query is sub query.
+first inner query will be executed and the result of inner query will be passed to outer query.
+inner query is written within the paraenthesis.
+Primary and forigen key value should be same.
+
+
+Views:inpalce inner join we can use this.or in complex query.
+
+
+
+
+
+
+
